@@ -1,15 +1,16 @@
 .search {
   display: inline;
   cursor: pointer;
+  color: #888;
   margin-left: 1rem;
   border: none;
-  font-size: 1.3rem;
-  vertical-align: middle;
+  font-size: 1.5rem;
+  vertical-align: bottom;
 }
 
 .searchbar input {
   color: #555;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   margin-left: 3rem;
   border: 1px solid #ccc;
   width: 20rem;
