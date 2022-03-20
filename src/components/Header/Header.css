@@ -1,7 +1,6 @@
 .header {
-  width: 100%;
-  box-shadow: 0 7px 10px #ddd;
-  margin: 0;
+  box-shadow: 0 7px 10px #e5e5e5;
+  margin: 0 0 10px 0;
   padding: 10px;
 }
 

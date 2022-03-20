@@ -5,9 +5,7 @@ import { GoSearch } from 'react-icons/go'
 function SearchBar() {
   return (
     <div className='searchbar'>
-      <input type="text" placeholder='Search'>
-
-      </input>
+      <input type="text" placeholder='Search' />
       <div className="search">
         <GoSearch />
       </div>

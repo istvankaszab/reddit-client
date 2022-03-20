@@ -1,0 +1,7 @@
+.reddits {
+  padding: 10px 20px 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 20px;
+  background-color: #f6f6f6;
+}

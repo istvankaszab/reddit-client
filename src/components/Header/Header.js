@@ -7,7 +7,7 @@ function Header() {
     <header className='header'>
       <ul>
         <li>
-          CRC Project
+          <strong>CRC Project</strong>
         </li>
         <li>
           <SearchBar />
