@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header'
 import PostsList from './components/PostsList/PostsList';
-import Subreddits from './components/Subreddits/Subreddits';
+import SubredditsList from './components/SubredditsList/SubredditsList';
 import './App.css'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <div className='reddits'>
         <PostsList />
-        <Subreddits />
+        <SubredditsList />
       </div>
     </div>
   );
