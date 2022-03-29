@@ -3,12 +3,14 @@ import './PostBody.css'
 import example from './example.jpg'
 import PostDetails from '../PostDetails/PostDetails'
 
-function PostBody() {
+function PostBody(props) {
+  const { post } = props;
+
   return (
     <div className='post-body'>
-      <h3>Some reddit title</h3>
-      <img className='post-image' src={example} alt='Example' />
-      <PostDetails />
+      <h3>{post.title}</h3>
+      <img className='post-image' src={post.url} alt='' />
+      <PostDetails author={post.author} />
     </div>
   )
 }
