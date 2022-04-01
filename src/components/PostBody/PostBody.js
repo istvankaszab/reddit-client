@@ -10,7 +10,7 @@ function PostBody(props) {
     <div className='post-body'>
       <h3>{post.title}</h3>
       <img className='post-image' src={post.url} alt='' />
-      <PostDetails author={post.author} />
+      <PostDetails author={post.author} created_utc={post.created_utc} num_comments={post.num_comments} />
     </div>
   )
 }

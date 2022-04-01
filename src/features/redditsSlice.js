@@ -45,8 +45,6 @@ export const {
 export default redditSlice.reducer;
 
 export const getPosts = (subreddit) => async (dispatch) => {
-  console.log('getPosts invoked');
-
   try {
     dispatch(startGetPosts());
     const posts = await getReddits(subreddit);

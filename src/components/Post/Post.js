@@ -8,7 +8,7 @@ function Post(props) {
 
   return (
     <div className='post'>
-      <PostVote post={post} />
+      <PostVote id={post.id} score={post.score}/>
       <PostBody post={post} />
     </div>
   )
