@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './PostsList.css'
 import Post from '../Post/Post'
 import { useDispatch, useSelector } from 'react-redux';
-import { getPosts, selectPosts } from '../../features/redditsSlice';
+import { getPosts, selectPosts, setSearchTerm } from '../../features/redditsSlice';
 
 function PostsList() {
  
   const dispatch = useDispatch();
   const reddits = useSelector((state) => state.reddits);
-  const { isLoading, error } = reddits;
+  const { isLoading, error, searchTerm } = reddits;
 
   useEffect(() => {
-    dispatch(getPosts(''));
-  }, []);
+    dispatch(getPosts(searchTerm));
+  }, [searchTerm]);
 
   const posts = useSelector(selectPosts);
 

@@ -1,9 +1,6 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { getReddits } from "../app/api";
 
-const d = new Date();
-const now = d.getTime();
-
 const initialState = {
   posts: [],
   searchTerm: '',
@@ -26,6 +23,9 @@ const redditSlice = createSlice({
     getPostsFailed(state) {
       state.isLoading = false;
       state.error = true;
+    },
+    setSearchTerm(state, action) {
+      state.searchTerm = action.payload;
     }
   }
 });
@@ -33,15 +33,16 @@ const redditSlice = createSlice({
 export const {
   startGetPosts,
   getPostsSuccess,
-  getPostsFailed
+  getPostsFailed,
+  setSearchTerm
 } = redditSlice.actions;
 
 export default redditSlice.reducer;
 
-export const getPosts = (subreddit) => async (dispatch) => {
+export const getPosts = (searchTerm) => async (dispatch) => {
   try {
     dispatch(startGetPosts());
-    const posts = await getReddits(subreddit);
+    const posts = await getReddits(searchTerm);
     dispatch(getPostsSuccess(posts));
   } catch (error) {
     console.log(error);
