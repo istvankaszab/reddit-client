@@ -7,12 +7,38 @@ import { getPosts, selectPosts } from '../../features/redditsSlice';
 function PostsList() {
  
   const dispatch = useDispatch();
- 
+  const reddits = useSelector((state) => state.reddits);
+  const { isLoading, error } = reddits;
+
   useEffect(() => {
     dispatch(getPosts(''));
   }, []);
 
   const posts = useSelector(selectPosts);
+
+  if(isLoading) {
+    return (
+      <main>
+        <h3>Loading posts ...</h3>
+      </main>
+    )
+  }
+
+  if(error) {
+    return (
+      <main>
+        <h3 className='error'>Error. Could not load posts.</h3>
+      </main>
+    )
+  }
+
+  if(posts.length === 0) {
+    return (
+      <main>
+        <h3 className='error'>There is no any posts. Try again.</h3>
+      </main>
+    )
+  }
 
   return (
     <main>

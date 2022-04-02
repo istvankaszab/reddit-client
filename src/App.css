@@ -5,3 +5,7 @@
   grid-column-gap: 20px;
   background-color: #f6f6f6;
 }
+
+.error {
+  color: #dd2222;
+}

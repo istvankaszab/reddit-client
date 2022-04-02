@@ -1,17 +1,11 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { getReddits } from "../app/api";
 
+const d = new Date();
+const now = d.getTime();
+
 const initialState = {
-  posts: [
-    {
-      id: 1,
-      title: 'First post'
-    },
-    {
-      id: 2,
-      title: 'Second post'
-    }
-  ],
+  posts: [],
   searchTerm: '',
   isLoading: false,
   error: false
