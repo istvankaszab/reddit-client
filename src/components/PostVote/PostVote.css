@@ -13,3 +13,8 @@
 .vote-score {
   margin: 10px 0;
 }
+
+.post-vote-loading {
+  height: 5rem;
+  width: 3rem;
+}

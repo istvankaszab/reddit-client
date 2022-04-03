@@ -19,7 +19,7 @@ function PostsList() {
   if(isLoading) {
     return (
       <main>
-        <h3>Loading posts ...</h3>
+        <Post key='0' isLoading={isLoading} />
       </main>
     )
   }
@@ -35,7 +35,7 @@ function PostsList() {
   if(posts.length === 0) {
     return (
       <main>
-        <h3 className='error'>There is no any posts. Try again.</h3>
+        <h3 className='error'>There are no any posts. Try again.</h3>
       </main>
     )
   }

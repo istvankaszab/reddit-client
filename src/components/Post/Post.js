@@ -4,7 +4,16 @@ import PostBody from '../PostBody/PostBody'
 import PostVote from '../PostVote/PostVote'
 
 function Post(props) {
-  const { post } = props;
+  const { post, isLoading } = props;
+
+  if(isLoading) {
+    return (
+      <div className='post'>
+      <PostVote isLoading={isLoading} />
+      <PostBody isLoading={isLoading} />
+    </div>     
+    )
+  }
 
   return (
     <div className='post'>

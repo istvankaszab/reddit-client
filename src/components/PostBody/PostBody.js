@@ -1,10 +1,18 @@
 import React from 'react'
 import './PostBody.css'
-import example from './example.jpg'
 import PostDetails from '../PostDetails/PostDetails'
 
 function PostBody(props) {
-  const { post } = props;
+  const { post, isLoading } = props;
+
+  if(isLoading) {
+    return (
+      <div className='post-body'>
+        <div className='is-loading post-title-loading'></div>
+        <div className='is-loading post-body-loading'></div>
+      </div>
+    )
+  }
 
   return (
     <div className='post-body'>

@@ -6,3 +6,13 @@
   width: 100%;
   margin-top: 20px;
 }
+
+.post-title-loading {
+  height: 2rem;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.post-body-loading {
+  height: 20rem;
+}
