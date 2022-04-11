@@ -4,7 +4,7 @@ import PostBody from '../PostBody/PostBody'
 import PostVote from '../PostVote/PostVote'
 
 function Post(props) {
-  const { post, isLoading } = props;
+  const { post, isLoading, index, onClickComments } = props;
 
   if(isLoading) {
     return (
@@ -18,7 +18,7 @@ function Post(props) {
   return (
     <div className='post'>
       <PostVote id={post.id} score={post.score}/>
-      <PostBody post={post} />
+      <PostBody post={post} index={index} />
     </div>
   )
 }

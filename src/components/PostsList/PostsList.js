@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react'
-import './PostsList.css'
-import Post from '../Post/Post'
+import React, { useEffect } from 'react';
+import './PostsList.css';
+import Post from '../Post/Post';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPosts, selectPosts, setSearchTerm } from '../../features/redditsSlice';
+import { getPosts, selectPosts } from '../../features/redditSlice';
 
 function PostsList() {
  
   const dispatch = useDispatch();
   const reddits = useSelector((state) => state.reddits);
-  const { isLoading, error, searchTerm } = reddits;
+  const { isLoading, error, searchTerm, subredditFilter } = reddits;
 
   useEffect(() => {
-    dispatch(getPosts(searchTerm));
-  }, [searchTerm]);
+    dispatch(getPosts(searchTerm, subredditFilter));
+  }, [dispatch, searchTerm, subredditFilter]);
 
   const posts = useSelector(selectPosts);
 
@@ -42,7 +42,15 @@ function PostsList() {
 
   return (
     <main>
-      {posts.map((post) => { return <Post key={post.id} post={post} /> })}
+      {posts.map((post, index) => {
+        return (
+          <Post
+            key={post.id}
+            post={post}
+            index={index}
+          />
+        )
+      })}
     </main>
   )
 }

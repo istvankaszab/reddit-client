@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './SearchBar.css'
 import { GoSearch } from 'react-icons/go'
 import { useDispatch, useSelector } from 'react-redux'
-import { setSearchTerm } from '../../features/redditsSlice';
+import { setSearchTerm } from '../../features/redditSlice';
 
 function SearchBar() {
   const [searchBarValue, setSearchBarValue] = useState('');

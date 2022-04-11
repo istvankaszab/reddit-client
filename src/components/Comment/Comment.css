@@ -1,0 +1,28 @@
+.comment {
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 0 7px 10px #e5e5e5;
+  max-width: 50vw;
+}
+
+.comment-header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #000055;
+  margin-bottom: 0.5rem;
+}
+
+.comment-age {
+  color: #999999;
+  font-style: italic;
+  font-size: 85%;
+}
+
+.comment-body {
+  overflow-wrap: break-word;
+}

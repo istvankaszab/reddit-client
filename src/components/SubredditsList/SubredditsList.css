@@ -1,4 +1,5 @@
 aside {
+  padding: 1rem;
   background-color: #ffffff;
-  padding: 10px;
+  box-shadow: 0 7px 10px #e5e5e5;
 }

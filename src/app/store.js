@@ -1,8 +1,10 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import redditReducer from '../features/redditsSlice';
+import redditReducer from '../features/redditSlice';
+import subredditReducer from '../features/subredditSlice';
 
 export const store = configureStore({
   reducer: {
-    reddits: redditReducer
+    reddits: redditReducer,
+    subreddits: subredditReducer
   },
 });

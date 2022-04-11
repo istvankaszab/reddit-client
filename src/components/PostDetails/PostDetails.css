@@ -10,7 +10,7 @@
 
 .post-user {
   font-weight: bold;
-  color: #44a;
+  color: #000055;
 }
 
 
@@ -19,4 +19,9 @@
   border: none;
   cursor: pointer;
   margin-right: 8px;
+  font-size: 1rem;
+}
+
+.comment-button-active {
+  color: #0000aa;
 }
