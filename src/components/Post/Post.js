@@ -4,7 +4,7 @@ import PostBody from '../PostBody/PostBody'
 import PostVote from '../PostVote/PostVote'
 
 function Post(props) {
-  const { post, isLoading, index, onClickComments } = props;
+  const { post, isLoading, index } = props;
 
   if(isLoading) {
     return (
