@@ -1,7 +1,13 @@
 aside {
+  height: fit-content;
   padding: 1rem;
   background-color: #ffffff;
   box-shadow: 0 7px 10px #e5e5e5;
+}
+
+aside ul li {
+  display: inline-block;
+  margin: 1rem 2rem 0 0;
 }
 
 .subreddit-loading {
