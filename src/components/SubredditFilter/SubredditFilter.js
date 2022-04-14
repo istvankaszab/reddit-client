@@ -5,7 +5,7 @@ import { setSubredditFilter } from '../../features/redditSlice';
 
 
 function SubredditFilter(props) {
-  const { url } = props;
+  const { filter } = props;
   const dispatch = useDispatch();
 
 
@@ -16,7 +16,7 @@ function SubredditFilter(props) {
 
   return (
     <div className='subreddit-filter'>
-      {url}
+      {filter}
       <div
         className='subreddit-filter-cancel'
         onClick={onClickCancel}

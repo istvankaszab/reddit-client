@@ -13,3 +13,14 @@
 li {
   list-style: none;
 }
+
+@media screen and (max-width: 600px) {
+  .aside {
+    display: none;
+  }
+
+  .reddits {
+    display: block;
+    padding: 0;
+  }
+}

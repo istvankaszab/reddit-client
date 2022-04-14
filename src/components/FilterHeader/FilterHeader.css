@@ -1,0 +1,29 @@
+.filter-header {
+  display: none;
+  z-index: 0;
+  position: fixed;
+  top: 3rem;
+  left: 1rem;
+  right: 1rem;
+  width: auto;
+  padding: 1rem;
+  border: 1px solid #bbbbbb;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.8rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .filter-header {
+    display: flex;
+    flex-direction: column;
+  }
+}

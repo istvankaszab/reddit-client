@@ -2,9 +2,34 @@
   box-shadow: 0 7px 10px #e5e5e5;
   margin: 0 0 10px 0;
   padding: 10px;
+  display: flex;
 }
 
-.header li {
-  display: inline-block;
-  margin: 5px;
+.small-screen {
+  display: none;
+}
+
+.menu-button {
+  display: inline;
+  cursor: pointer;
+  color: #888;
+  background-color: #ffffff;
+  margin-left: 1rem;
+  border: none;
+  font-size: 1.5rem;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 600px){
+  .wide-screen {
+    display: none;
+  }
+
+  .small-screen {
+    display: block;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
 }

@@ -15,3 +15,10 @@ aside ul li {
   width: 10rem;
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  aside {
+    box-shadow: none;
+    margin-top: 1rem;;
+  }
+}

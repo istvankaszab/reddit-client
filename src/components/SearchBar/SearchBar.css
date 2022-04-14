@@ -9,12 +9,23 @@
   vertical-align: bottom;
 }
 
+.searchbar {
+  margin-left: 3rem;
+  display: flexbox;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
 .searchbar input {
   color: #555;
   padding: 0 1rem;
-  margin-left: 3rem;
   border: 1px solid #ccc;
-  width: 20rem;
   height: 2rem;
   border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .searchbar {
+    margin: 0;
+  }
 }

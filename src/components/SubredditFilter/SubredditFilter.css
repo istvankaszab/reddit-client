@@ -1,5 +1,5 @@
 .subreddit-filter {
-  background-color: #888888;
+  background-color: #aaaaaa;
   color: #ffffff;
   font-weight: bold;
   font-size: 0.9rem;
@@ -11,10 +11,10 @@
 
 .subreddit-filter-cancel {
   background-color: #ffffff;
-  color: #888888;
+  color: #aaaaaa;
   font-weight: bold;
   border-radius: 0.3rem;
-  border: 1px solid #888888;
+  border: 1px solid #aaaaaa;
   cursor: pointer;
   display: inline-block;
   margin-left: 1rem;

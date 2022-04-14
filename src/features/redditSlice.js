@@ -6,7 +6,8 @@ const initialState = {
   searchTerm: '',
   subredditFilter: '',
   isLoading: false,
-  error: false
+  error: false,
+  showFilterHeader: false
 };
 
 const redditSlice = createSlice({
@@ -28,10 +29,12 @@ const redditSlice = createSlice({
     setSearchTerm(state, action) {
       state.subredditFilter = '';
       state.searchTerm = action.payload;
+      state.showFilterHeader = false;
     },
     setSubredditFilter(state, action) {
       state.searchTerm = '';
       state.subredditFilter = action.payload;
+      state.showFilterHeader = false;
     },
     toggleShowComments(state, action) {
       state.posts[action.payload].showComments = !state.posts[action.payload]
@@ -53,6 +56,9 @@ const redditSlice = createSlice({
     getCommentsFailed(state, action) {
       state.posts[action.payload].loadingComments = false;
       state.posts[action.payload].error = true;
+    },
+    toggleFilterHeader(state) {
+      state.showFilterHeader = !state.showFilterHeader;
     }
   }
 });
@@ -65,7 +71,8 @@ export const {
   setSubredditFilter,
   startGetComments,
   getCommentsSuccess,
-  getCommentsFailed
+  getCommentsFailed,
+  toggleFilterHeader
 } = redditSlice.actions;
 
 export default redditSlice.reducer;

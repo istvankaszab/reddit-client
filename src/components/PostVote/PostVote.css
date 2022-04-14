@@ -2,12 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
-  font-size: 1.1rem;
-}
-
-.vote-arrow {
-  cursor: pointer;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .vote-score {
