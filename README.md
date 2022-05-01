@@ -1,5 +1,7 @@
 # Reddit Client
-Portfolio project on Codecademy *Full Stack Engineer Path*
+**CRC Project** - ***C***odecademy ***R***eddit ***C***lient <br />
+Portfolio project on Codecademy *Full Stack Engineer Path* <br />
+
 
 The project objective is to build an application for *Reddit* using what I have learnt so far.<br />
 
