@@ -1,3 +1,22 @@
+# Reddit Client
+Portfolio project on Codecademy *Full Stack Engineer Path*
+
+The project objective is to build an application for *Reddit* using what I have learnt so far.<br />
+
+### Technologies used:
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **React**
+- **Redux**
+- **Git**
+<br />
+The app gets data from Reddit JSON API, so we can not perform any write operations. <br />
+We can filter the reddits by subreddits or searching for words.
+
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
